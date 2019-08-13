@@ -5,6 +5,7 @@ Data-based prediction of the best performing DMR algorithm
 The decision tree requires data attributes like the average methylation levels in presumably methylated/unmethylated regions. 
 This features can be calulated by the code provided in the repository as shown in the following example:
 
+```
 addpath('library');          % adding the folder to Matlab search path
 
 dat = wgbss_load(file);      % reading data
@@ -16,3 +17,4 @@ load Decision_tree.mat tree  % loading the decision tree as matlab variable
 methodnames = {'BSmooth','DMRcate','metilene'};
 pred = predict(tree,X);      % performing predictions
 fprintf('Decision tree suggests %s.\n',methodnames{round(pred)});  % printing the outcome
+```
