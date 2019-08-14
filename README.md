@@ -20,7 +20,7 @@ fprintf('Decision tree suggests %s.\n',methodnames{round(pred)});  % printing th
 
 ## Data format
 Our code requires the following data format:
-````
+```
 Scaffold_65	16310	+	2	100.000
 Scaffold_65	16332	+	1	100.000
 Scaffold_65	16357	+	2	100.000
@@ -37,6 +37,7 @@ Scaffold_65	17675	-	2	0.000
 Scaffold_65	17716	+	6	0.000
 Scaffold_65	17717	-	1	0.000
 ```
+
 Description of the columns:
 1) Chrosome (or scaffold) name
 2) Position [bp]
