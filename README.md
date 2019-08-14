@@ -11,7 +11,7 @@ addpath('library');          % adding the folder to Matlab search path
 dat = wgbss_load(file);      % reading data
 dat = wgbss_CalculateDataFeatures(dat); % calculation of data attributes
 
-X = dat2X(dat);                         % formatting the data attributes as required for the decision tree
+X = dat2X(dat,tree);         % formatting the data attributes as required for the decision tree
 load Decision_tree.mat tree methodnames % loading the decision tree and method names as matlab variable
 
 pred = predict(tree,X);      % performing predictions
