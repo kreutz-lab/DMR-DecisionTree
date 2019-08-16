@@ -45,6 +45,9 @@ Description of the columns:
 4) Reads [counts]
 5) Methylation level [%]
 
+The code is not yet optimized with respect to runtime and RAM usage. If your data sets are too large and a limitation in terms of runtime occurs, then a representative subset might be used.
+
+
 ## Benchmark data
 21 benchmark data sets are provided in folder
 ```
