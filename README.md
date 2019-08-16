@@ -45,3 +45,18 @@ Description of the columns:
 4) Reads [counts]
 5) Methylation level [%]
 
+## Benchmark data
+21 benchmark data sets are provided in folder
+```
+BenchmarkData
+```
+
+The data analyzed by DMR appraoches are in subfolder ``BenchmarkData``. The underlying truth is in subfolder ``GroundTruth``. 
+
+In order to assess DMR approaches in an unbiased manner, the performance should be tested without any knowledge about the ground truth. Moreover, the strategy for choosing configuration parameters of DMR algorithms should be specified in advance, i.e. before assessment based on the gorund truth.
+
+## Experimental data
+The data sets used as templates for the simulated benchmark data sets is in folder
+```
+Data
+```
