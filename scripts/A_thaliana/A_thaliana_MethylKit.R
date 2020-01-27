@@ -62,7 +62,7 @@ DMR_caller <- function(m_ecotype, m_context){
 								)
 
 
-	MethylRawList_filtered <- filterByCoverage(MethylRawList, lo.count=5, hi.perc=99.9)
+	MethylRawList_filtered <- filterByCoverage(MethylRawList, lo.count=10, hi.perc=99.9)
 	MethylRawList_tiled <- tileMethylCounts(MethylRawList_filtered, win.size= 200, step.size= 200)
 	MethylRawList_united <- unite(MethylRawList_tiled)
 pdf(paste("output_dir/",newFolder,"PCA_",m_ecotype,"_",m_context, "comp12.pdf",sep=""))

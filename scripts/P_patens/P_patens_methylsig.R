@@ -21,7 +21,7 @@ DMRcaller <- function(m_ecotype, m_context){
 
 	meth_cpg <- methylSigReadData(filelist, sample.ids = sample_ids, 
 								assembly = "sim_cpg_g129", treatment = rep(c(1,0), 
-								each = length(sample_ids)/2), minCount=7, context = "CpG",
+								each = length(sample_ids)/2), minCount=10, context = "CpG",
 								destranded = F)
 
 	meth_cpg_tile <- methylSigTile(meth_cpg, win.size = 200)

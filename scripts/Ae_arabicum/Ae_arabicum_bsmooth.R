@@ -35,7 +35,7 @@ DMR_calling <- function(m_dataBS,m_ecotype, m_context){
   pData(m_dataBS)$Pair <- c("replicate1","replicate2","replicate3")
   pData(m_dataBS)$Type <- c("test","test","test","control","control","control")
   
-  dataBS_cov <- getCoverage(dataBSmooth)
+  dataBS_cov <- getCoverage(dataBSmooth ==10 )
   
   BS_cov_filtered <- which(rowSums(dataBS_cov[,m_dataBS$Type == "test"]>= 2)>=2 & 
                              rowSums(dataBS_cov[,m_dataBS$Type == "control"]>=2)>=2)

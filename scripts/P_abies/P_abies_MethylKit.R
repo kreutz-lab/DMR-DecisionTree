@@ -66,7 +66,7 @@ DMR_caller <- function(m_ecotype, m_context){
 	for (i in 1:len_filelist) getCoverageStats(MethylRawList[[i]], plot = T, both.strands = F)
 	dev.off()
 
-	MethylRawList_filtered <- filterByCoverage(MethylRawList, lo.count=5, hi.perc=99.9)
+	MethylRawList_filtered <- filterByCoverage(MethylRawList, lo.count=10, hi.perc=99.9)
 	MethylRawList_tiled <- tileMethylCounts(MethylRawList_filtered, win.size= 200, step.size= 200)
 	MethylRawList_united <- unite(MethylRawList_tiled)
 
