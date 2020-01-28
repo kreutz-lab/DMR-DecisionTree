@@ -63,3 +63,7 @@ The data sets used as templates for the simulated benchmark data sets is in fold
 ```
 Data
 ```
+
+## Analysis from paper
+This folder contains Matlab scripts that have been used for assessing the DMR predictions and for generating the figures.
+
