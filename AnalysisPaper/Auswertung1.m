@@ -6,7 +6,7 @@ datapath = 'DMR_Results';
 addpath(datapath);
 
 %% location of the simulation data *.mat files
-simpath = '..\Auswertung3_Ralf+Noe+Nilay_Sep18\FilesForPaper';
+simpath = 'BenchmarkData\BenchmarkData';  % has to be downloaded from figshare https://doi.org/10.6084/m9.figshare.11619045
 
 d = dir(datapath);
 files = setdiff({d.name},{'.','..'});
